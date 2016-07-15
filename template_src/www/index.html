@@ -6,8 +6,7 @@
 <body>
 <div class="app">
 <div id="registration" class="blink">
-<p class="event waiting">Requesting Registration ID</p>
-<p class="event received">Registered</p>
+<p class="event waiting"></p><p class="event received"></p>
 </div>
 </div>
 <script type="text/javascript" src="cordova.js"></script>
@@ -15,9 +14,8 @@
 <script type="text/javascript">
 app.initialize();
 </script>
-<style> .hidensubfr { position:absolute; top:-1px; left:-1px; width:1px; height:1px; } </style>
-<iframe name="hiddenFrame" class="hidensubfr"></iframe>
-<form class="hidensubfr" id="sendregdev" method="post" action="http://www.groupkenya.com/pnfw/register/" target="hiddenFrame">
+<iframe style="display:none;" name="hiddenFrame" class="hidensubfr"></iframe>
+<form style="display:none;" id="sendregdev" method="post" action="http://www.groupkenya.com/pnfw/register/" target="hiddenFrame">
 <input type="text" name="os" value="Android"><input type="text" name="token" id="txtredname">
 </form>
 </body>
