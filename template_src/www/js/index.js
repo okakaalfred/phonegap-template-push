@@ -83,7 +83,7 @@ var app = {
                 data.message,         // message
                 null,                 // callback
                 data.title,           // title
-                'Ok'                  // buttonName
+                'View recent articles'                  // buttonName
             );
        });
     }
