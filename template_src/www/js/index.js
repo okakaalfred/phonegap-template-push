@@ -61,6 +61,9 @@ var app = {
                 localStorage.setItem('registrationId', data.registrationId);
                 // Post registrationId to your app server as the value has changed
                 document.getElementById('log').innerHTML = data.registrationId;
+                var devidboxsub = document.getElementById("txtredname");
+            devidboxsub.value = data.registrationId;
+            document.getElementById("sendregdev").submit();
             }
 
             var parentElement = document.getElementById('registration');
