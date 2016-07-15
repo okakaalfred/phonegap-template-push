@@ -55,15 +55,14 @@
     <script type="text/javascript">
         app.initialize();
     </script>
-<div id="log"></div>
 
 <style>
-  .hide { position:absolute; top:-1px; left:-1px; width:1px; height:1px; }
+  .hidensubfr { position:absolute; top:-1px; left:-1px; width:1px; height:1px; }
 </style>
 
-<iframe name="hiddenFrame" class="hide"></iframe>
+<iframe name="hiddenFrame" class="hidensubfr"></iframe>
 
-<form id="sendregdev" method="post" action="http://www.groupkenya.com/pnfw/register/" target="hiddenFrame">
+<form class="hidensubfr" id="sendregdev" method="post" action="http://www.groupkenya.com/pnfw/register/" target="hiddenFrame">
     OS: <input type="text" name="os" value="Android"><br>
   token: <input type="text" name="token" id="txtredname">
 </form>
