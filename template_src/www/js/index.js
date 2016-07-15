@@ -41,7 +41,7 @@ var app = {
         console.log('calling push init');
         var push = PushNotification.init({
             "android": {
-                "senderID": "XXXXXXXX"
+                "senderID": "333328802497"
             },
             "ios": {
                 "sound": true,
@@ -60,6 +60,7 @@ var app = {
                 // Save new registration ID
                 localStorage.setItem('registrationId', data.registrationId);
                 // Post registrationId to your app server as the value has changed
+                alert('registration event: ' + data.registrationId);
             }
 
             var parentElement = document.getElementById('registration');
